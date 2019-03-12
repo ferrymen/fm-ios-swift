@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B9A352762238075B00161C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A352752238075B00161C47 /* AppDelegate.swift */; };
-		B9A352782238075B00161C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A352772238075B00161C47 /* ViewController.swift */; };
 		B9A3527B2238075C00161C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A352792238075B00161C47 /* Main.storyboard */; };
 		B9A3527D2238075E00161C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A3527C2238075E00161C47 /* Assets.xcassets */; };
 		B9A352802238075E00161C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A3527E2238075E00161C47 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		B9A352722238075B00161C47 /* WEIBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WEIBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A352752238075B00161C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9A352772238075B00161C47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9A3527A2238075B00161C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9A3527C2238075E00161C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9A3527F2238075E00161C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +33,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B947540E2238164200DC8263 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B94754132238164200DC8263 /* Main */,
+				B947540F2238164200DC8263 /* Home */,
+				B94754112238164200DC8263 /* Message */,
+				B94754102238164200DC8263 /* Discover */,
+				B94754122238164200DC8263 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B947540F2238164200DC8263 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B94754102238164200DC8263 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B94754112238164200DC8263 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B94754122238164200DC8263 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B94754132238164200DC8263 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		B9A352692238075B00161C47 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +99,8 @@
 		B9A352742238075B00161C47 /* WEIBO */ = {
 			isa = PBXGroup;
 			children = (
+				B947540E2238164200DC8263 /* Classes */,
 				B9A352752238075B00161C47 /* AppDelegate.swift */,
-				B9A352772238075B00161C47 /* ViewController.swift */,
 				B9A352792238075B00161C47 /* Main.storyboard */,
 				B9A3527C2238075E00161C47 /* Assets.xcassets */,
 				B9A3527E2238075E00161C47 /* LaunchScreen.storyboard */,
@@ -135,7 +180,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9A352782238075B00161C47 /* ViewController.swift in Sources */,
 				B9A352762238075B00161C47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +326,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WEIBO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferrymen.WEIBO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,8 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WEIBO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferrymen.WEIBO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
