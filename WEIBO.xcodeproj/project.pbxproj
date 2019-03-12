@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B947541522381A3B00DC8263 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947541422381A3B00DC8263 /* MainViewController.swift */; };
 		B9A352762238075B00161C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A352752238075B00161C47 /* AppDelegate.swift */; };
 		B9A3527B2238075C00161C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A352792238075B00161C47 /* Main.storyboard */; };
 		B9A3527D2238075E00161C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A3527C2238075E00161C47 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B947541422381A3B00DC8263 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B9A352722238075B00161C47 /* WEIBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WEIBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A352752238075B00161C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9A3527A2238075B00161C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		B94754132238164200DC8263 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B947541422381A3B00DC8263 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9A352762238075B00161C47 /* AppDelegate.swift in Sources */,
+				B947541522381A3B00DC8263 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
