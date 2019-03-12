@@ -16,20 +16,11 @@ class MainViewController: UITabBarController {
 //        tabBar.tintColor = UIColor.orange
 
         // Do any additional setup after loading the view.
-        
-        // 1､创建子控制器
-        let childVc = HomeViewController()
-        
-        // 2､设置子控制器的属性
-        childVc.title = "首页"
-        childVc.tabBarItem.image = UIImage(named: "tabbar_home")
-        childVc.tabBarItem.selectedImage = UIImage(named: "tabbar_home_highlighted")
-        
-        // 3､包装导航栏控制器
-        let childNav = UINavigationController(rootViewController: childVc)
-        
-        // 4､添加控制器
-        addChild(childNav)
+        addChildViewController(childVc: HomeViewController(), title: "首页", imageName: "tabbar_home")
+        addChildViewController(childVc: MessageViewController(), title: "消息", imageName: "tabbar_message_center")
+        addChildViewController(childVc: DiscoverViewController(), title: "发现", imageName: "tabbar_discover")
+        addChildViewController(childVc: ProfileViewController(), title: "我的", imageName: "tabbar_profile")
+
     }
     
 
@@ -42,5 +33,19 @@ class MainViewController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    private func addChildViewController(childVc: UIViewController, title: String, imageName: String) -> Void {
+        
+        // 2､设置子控制器的属性
+        childVc.title = title
+        childVc.tabBarItem.image = UIImage(named: imageName)
+        childVc.tabBarItem.selectedImage = UIImage(named: "\(imageName)_highlighted")
+        
+        // 3､包装导航栏控制器
+        let childNav = UINavigationController(rootViewController: childVc)
+        
+        // 4､添加控制器
+        addChild(childNav)
+    }
 
 }
